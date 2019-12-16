@@ -1,0 +1,30 @@
+<body>
+  
+<ion-content padding>
+  <figure text-center>
+    <img src="assets/img/logo.png" class="logo-top" alt="Boomr Logo"/>
+    <p>Listen music, meet, socialize.</p>
+  </figure>
+
+  <form
+    class="form"
+    [formGroup]="validations_form"
+    (ngSubmit)="loginUser(validations_form.value)"
+  >
+
+
+    <ion-button
+      color="primary"
+      expand="block"
+      fill="solid"
+      shape="round"
+      size = "large"
+      class="submit-btn button-block"
+      type="submit">
+      Connect with Spotify
+    </ion-button>
+
+  </form>
+</ion-content>
+
+</body>
