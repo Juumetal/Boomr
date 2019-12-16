@@ -9,7 +9,6 @@ import { LoginPage } from "./login.page";
 
 const routes: Routes = [
   {
-    // Rutas Hijas
     path: "",
     component: LoginPage
   }

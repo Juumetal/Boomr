@@ -20,12 +20,22 @@ figure p{
   font-weight: 200;
 }
 
+
+
 .submit-btn {
-  margin-top: 130px;
+  margin-top: 80px;
   margin-bottom: 30px;
   color: #ffffff;
   font-family: Lato;
   font-size: 13px;
   font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  flex-flow: wrap-reverse;
+  height: 50px;
 }
 
+.submit-btn img{
+  width: 22%;
+  padding-left: 40px;
+}

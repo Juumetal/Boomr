@@ -32,32 +32,16 @@ export class LoginPage {
           Validators.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$")
         ])
       ),
-      password: new FormControl(
-        "",
-        Validators.compose([Validators.minLength(5), Validators.required])
-      )
     });
   }
 
   loginUser(value) {
     this.authService
       .loginUser(value)
-      .then(user => {
-        if (user) {
-          this.errorMessage = "";
-          this.storage.set("isLogged", true);
-          this.storage.set("currentUser", user);
-          this.navCtrl.navigateForward("/menu/tabs/home");
-        } else {
-          this.errorMessage = "Usuario no existe";
-        }
-      })
       .catch(error => {
         this.errorMessage = error;
       });
   }
 
-  goToRegisterPage() {
-    this.navCtrl.navigateForward("/register");
-  }
+
 }
