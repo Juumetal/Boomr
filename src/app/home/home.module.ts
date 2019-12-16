@@ -6,27 +6,18 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
-const routes: Routes = [
-  {
-    path: "",
-    component: LoginPage
-  }
-];
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReactiveFormsModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild([
+      {
+        path: '',
+        component: HomePage
+      }
+    ])
   ],
-  declarations: [LoginPage]
+  declarations: [HomePage]
 })
-
 export class HomePageModule {}
-
-
-
-
-

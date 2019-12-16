@@ -1,41 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-
-
-.logo-top{
-  width: 243px;
-  height: 57px;
+.album-avatar {
+  width: 90px;
+  height: 120px;
+}
+.square-avatar {
+  --border-radius: 0;
+}
+ion-slide {
+  margin: 0 20px 0 20px;
+  font-size: 12px;
+}
+h1 {
+  font-size: 18px;
+  color: var(--ion-color-success);
+  margin-top: 30px;
+}
+ion-icon {
+  font-size: 26px;
+}
+.time-marker {
+  color: gray;
+  font-size: 10px;
+}
+ion-progress {
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 16px;
+  margin-top: 3px;
+}
+ion-footer {
+  box-shadow: grey 10px 10px 10px 10px;
 }
 
-figure{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-figure p{
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  color: #ffffff;
-  font-family: Lato;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-
-
-.submit-btn {
-  margin-top: 80px;
-  margin-bottom: 30px;
-  color: #ffffff;
-  font-family: Lato;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  flex-flow: wrap-reverse;
-  height: 50px;
-}
-
-.submit-btn img{
-  width: 22%;
-  padding-left: 40px;
+.swiper-slide img {
+  height: 90px;
 }
